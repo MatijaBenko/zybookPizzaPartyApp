@@ -42,12 +42,10 @@ public class MainActivity extends AppCompatActivity {
         mNumAttendEditText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
-
             }
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-
             }
 
             @Override
@@ -87,9 +85,9 @@ public class MainActivity extends AppCompatActivity {
         catch (NumberFormatException ex) {
             numAttend = 0;
         }
-/*
+
         // Get hunger level selection
-        int checkedId = mHowHungryRadioGroup.getCheckedRadioButtonId();
+        int checkedId = mHowHungrySpinner.getId();
         PizzaCalculator.HungerLevel hungerLevel = PizzaCalculator.HungerLevel.RAVENOUS;
         if (checkedId == R.id.hungerSpinner) {
             hungerLevel = PizzaCalculator.HungerLevel.LIGHT;
@@ -104,6 +102,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Place totalPizzas into the string resource and display
         String totalText = getString(R.string.total_pizzas, totalPizzas);
-        mNumPizzasTextView.setText(totalText); */
+        mNumPizzasTextView.setText(totalText);
     }
 }
